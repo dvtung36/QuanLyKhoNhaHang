@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhoNhaHang
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1112, 611);
+            this.Name = "FormMain";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
