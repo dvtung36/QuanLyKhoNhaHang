@@ -14,6 +14,7 @@ namespace QuanLyKhoNhaHang.QLPhieuDatNguyenLieu
 {
     public partial class FormQLPhieuDatNL : Form
     {
+        MyDBcontext db = new MyDBcontext();
         public FormQLPhieuDatNL()
         {
             InitializeComponent();
@@ -54,7 +55,17 @@ namespace QuanLyKhoNhaHang.QLPhieuDatNguyenLieu
 
         private void FormQLPhieuDatNL_Load(object sender, EventArgs e)
         {
+            List<PhieuDatNL> DS = db.PhieuDatNLs.ToList();
+            foreach (PhieuDatNL nl in DS)
+            {
+                ListViewItem list = new ListViewItem(nl.MaPDNL.ToString());
+            
+                list.SubItems.Add(nl.NgayLap.ToString());
+                list.SubItems.Add(nl.MaNCC.ToString());
+                list.SubItems.Add(nl.MaNV.ToString());
 
+                listView1.Items.Add(list);
+            }
         }
     }
 }

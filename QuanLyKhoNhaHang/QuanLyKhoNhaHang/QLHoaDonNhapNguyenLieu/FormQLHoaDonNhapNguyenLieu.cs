@@ -61,7 +61,6 @@ namespace QuanLyKhoNhaHang.QLHoaDonNhapNguyenLieu
                 list.SubItems.Add(hd.MaPDNL.ToString());
                 list.SubItems.Add(hd.NgayLap.ToString());
                 list.SubItems.Add(hd.MaHDN.ToString());
-
                 listHoaDon.Items.Add(list);
             }
         }

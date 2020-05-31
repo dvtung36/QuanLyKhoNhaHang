@@ -28,24 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTroLai = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtMaPhieuDatNLCanXoa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 338);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1310, 371);
-            this.dataGridView1.TabIndex = 47;
             // 
             // btnTroLai
             // 
@@ -111,13 +105,53 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Xóa Phiếu Đặt Nguyên Liệu";
             // 
+            // listView1
+            // 
+            this.listView1.AllowColumnReorder = true;
+            this.listView1.AllowDrop = true;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(2, 318);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(1311, 382);
+            this.listView1.TabIndex = 47;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã Phiếu Đặt Nguyên Liệu";
+            this.columnHeader1.Width = 325;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Ngày Lập";
+            this.columnHeader2.Width = 272;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Mã Nhà Cung Cấp";
+            this.columnHeader3.Width = 358;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Mã Nhân Viên";
+            this.columnHeader4.Width = 368;
+            // 
             // FormXoaPhieuDatNL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(1314, 700);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
@@ -127,20 +161,23 @@
             this.Name = "FormXoaPhieuDatNL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormXoaPhieuDatNL";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormXoaPhieuDatNL_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnTroLai;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtMaPhieuDatNLCanXoa;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

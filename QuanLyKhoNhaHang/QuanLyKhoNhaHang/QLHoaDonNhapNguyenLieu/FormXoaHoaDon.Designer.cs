@@ -45,10 +45,10 @@
             // 
             this.btnTroLai.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTroLai.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnTroLai.Location = new System.Drawing.Point(2, 1);
-            this.btnTroLai.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTroLai.Location = new System.Drawing.Point(3, 1);
+            this.btnTroLai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTroLai.Name = "btnTroLai";
-            this.btnTroLai.Size = new System.Drawing.Size(139, 54);
+            this.btnTroLai.Size = new System.Drawing.Size(185, 66);
             this.btnTroLai.TabIndex = 53;
             this.btnTroLai.Text = "Trở Lại";
             this.btnTroLai.UseVisualStyleBackColor = true;
@@ -58,10 +58,10 @@
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnThoat.Location = new System.Drawing.Point(145, 1);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Location = new System.Drawing.Point(193, 1);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(140, 54);
+            this.btnThoat.Size = new System.Drawing.Size(187, 66);
             this.btnThoat.TabIndex = 52;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -71,31 +71,31 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnXoa.Location = new System.Drawing.Point(426, 190);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Location = new System.Drawing.Point(568, 234);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(165, 63);
+            this.btnXoa.Size = new System.Drawing.Size(220, 78);
             this.btnXoa.TabIndex = 51;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtMaPhieuDatNLCanXoa
             // 
             this.txtMaPhieuDatNLCanXoa.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPhieuDatNLCanXoa.Location = new System.Drawing.Point(417, 114);
-            this.txtMaPhieuDatNLCanXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaPhieuDatNLCanXoa.Location = new System.Drawing.Point(556, 140);
+            this.txtMaPhieuDatNLCanXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaPhieuDatNLCanXoa.Name = "txtMaPhieuDatNLCanXoa";
-            this.txtMaPhieuDatNLCanXoa.Size = new System.Drawing.Size(262, 32);
+            this.txtMaPhieuDatNLCanXoa.Size = new System.Drawing.Size(348, 39);
             this.txtMaPhieuDatNLCanXoa.TabIndex = 50;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 117);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(41, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 25);
+            this.label2.Size = new System.Drawing.Size(482, 33);
             this.label2.TabIndex = 49;
             this.label2.Text = "Mã Hóa Đơn Nhập Nguyên Liệu Cần Xóa";
             // 
@@ -104,10 +104,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(289, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(385, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 40);
+            this.label1.Size = new System.Drawing.Size(540, 49);
             this.label1.TabIndex = 48;
             this.label1.Text = "Xóa Phiếu Đặt Nguyên Liệu";
             // 
@@ -122,9 +121,10 @@
             this.listHoaDon.FullRowSelect = true;
             this.listHoaDon.GridLines = true;
             this.listHoaDon.HideSelection = false;
-            this.listHoaDon.Location = new System.Drawing.Point(2, 328);
+            this.listHoaDon.Location = new System.Drawing.Point(3, 404);
+            this.listHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listHoaDon.Name = "listHoaDon";
-            this.listHoaDon.Size = new System.Drawing.Size(985, 247);
+            this.listHoaDon.Size = new System.Drawing.Size(1312, 303);
             this.listHoaDon.TabIndex = 54;
             this.listHoaDon.UseCompatibleStateImageBehavior = false;
             this.listHoaDon.View = System.Windows.Forms.View.Details;
@@ -151,10 +151,10 @@
             // 
             // FormXoaHoaDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(985, 575);
+            this.ClientSize = new System.Drawing.Size(1313, 708);
             this.Controls.Add(this.listHoaDon);
             this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.btnThoat);
@@ -162,6 +162,7 @@
             this.Controls.Add(this.txtMaPhieuDatNLCanXoa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormXoaHoaDon";
             this.Text = "FormXoaHoaDon";
             this.ResumeLayout(false);

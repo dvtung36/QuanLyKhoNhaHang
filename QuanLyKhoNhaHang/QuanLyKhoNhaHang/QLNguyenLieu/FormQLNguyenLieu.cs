@@ -57,10 +57,20 @@ namespace QuanLyKhoNhaHang.QLNguyenLieu
 
         private void FormQLNguyenLieu_Load(object sender, EventArgs e)
         {
-            var dl = db.NguyenLieux.Where(x => x.MaNL != null);
-            DataTable dt = new DataTable();
-          //  dl.Fill(dt);
-            dataGridViewdsnl.DataSource = dt;
+
+            List<NguyenLieu> DS = db.NguyenLieux.ToList();
+            foreach (NguyenLieu nl in DS)
+            {
+                ListViewItem list = new ListViewItem(nl.MaNL.ToString());
+                list.SubItems.Add(nl.TenNL.ToString());
+                list.SubItems.Add(nl.LoaiTuoiKho.ToString());
+                list.SubItems.Add(nl.GiaTien.ToString());
+                list.SubItems.Add(nl.SoLuong.ToString());
+                list.SubItems.Add(nl.TenDonVi.ToString());
+
+
+                listView1.Items.Add(list);
+            }
         }
     }
 }

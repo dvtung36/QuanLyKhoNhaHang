@@ -174,7 +174,7 @@ insert into ChiTietPTK(MaPTK, MaNL, SoLuong) values
 	(3, 5, (select SoLuong from NguyenLieu where NguyenLieu.MaNL = 5))
 go
 
-/ Hà Lâm Giang, Nghiệp vụ nhập nguyên liệu tươi*/
+/* Hà Lâm Giang, Nghiệp vụ nhập nguyên liệu tươi*/
 
 --dữ liệu danh mục
 

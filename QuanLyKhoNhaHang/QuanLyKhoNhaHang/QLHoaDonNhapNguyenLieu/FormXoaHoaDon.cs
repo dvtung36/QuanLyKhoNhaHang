@@ -28,5 +28,10 @@ namespace QuanLyKhoNhaHang.QLHoaDonNhapNguyenLieu
         {
             Application.Exit();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
