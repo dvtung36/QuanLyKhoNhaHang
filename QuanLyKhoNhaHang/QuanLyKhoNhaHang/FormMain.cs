@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyKhoNhaHang.model;
+using QuanLyKhoNhaHang.QLHoaDonNhapNguyenLieu;
 using QuanLyKhoNhaHang.QLNguyenLieu;
 using QuanLyKhoNhaHang.QLPhieuDatNguyenLieu;
+using QuanLyKhoNhaHang.QLPhieuThongKe;
 
 namespace QuanLyKhoNhaHang
 {
@@ -35,6 +37,20 @@ namespace QuanLyKhoNhaHang
         private void btnQLPhieuDatNL_Click(object sender, EventArgs e)
         {
             FormQLPhieuDatNL f = new FormQLPhieuDatNL();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnQLHoaDonNhap_Click(object sender, EventArgs e)
+        {
+            FormQLHoaDonNhapNguyenLieu f = new FormQLHoaDonNhapNguyenLieu();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnQLphieuThongKe_Click(object sender, EventArgs e)
+        {
+            FormQLPhieuThongKe f = new FormQLPhieuThongKe();
             f.Show();
             this.Hide();
         }

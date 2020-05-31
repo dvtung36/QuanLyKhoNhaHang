@@ -51,5 +51,10 @@ namespace QuanLyKhoNhaHang.QLPhieuDatNguyenLieu
             f.Show();
             this.Hide();
         }
+
+        private void FormQLPhieuDatNL_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

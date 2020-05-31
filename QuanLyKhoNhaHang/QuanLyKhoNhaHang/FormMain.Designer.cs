@@ -44,9 +44,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(421, 25);
+            this.label1.Location = new System.Drawing.Point(316, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 49);
+            this.label1.Size = new System.Drawing.Size(386, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản Lý Kho Nhà Hàng";
             // 
@@ -54,9 +55,10 @@
             // 
             this.btnQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNhanVien.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLNhanVien.Location = new System.Drawing.Point(74, 143);
+            this.btnQLNhanVien.Location = new System.Drawing.Point(56, 116);
+            this.btnQLNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLNhanVien.Name = "btnQLNhanVien";
-            this.btnQLNhanVien.Size = new System.Drawing.Size(233, 106);
+            this.btnQLNhanVien.Size = new System.Drawing.Size(175, 86);
             this.btnQLNhanVien.TabIndex = 1;
             this.btnQLNhanVien.Text = "QL Nhân Viên";
             this.btnQLNhanVien.UseVisualStyleBackColor = true;
@@ -65,9 +67,10 @@
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnThoat.Location = new System.Drawing.Point(1017, 366);
+            this.btnThoat.Location = new System.Drawing.Point(763, 297);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(233, 96);
+            this.btnThoat.Size = new System.Drawing.Size(175, 78);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -77,9 +80,10 @@
             // 
             this.btnQLBienBanThanhLy.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLBienBanThanhLy.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLBienBanThanhLy.Location = new System.Drawing.Point(705, 366);
+            this.btnQLBienBanThanhLy.Location = new System.Drawing.Point(529, 297);
+            this.btnQLBienBanThanhLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLBienBanThanhLy.Name = "btnQLBienBanThanhLy";
-            this.btnQLBienBanThanhLy.Size = new System.Drawing.Size(233, 96);
+            this.btnQLBienBanThanhLy.Size = new System.Drawing.Size(175, 78);
             this.btnQLBienBanThanhLy.TabIndex = 3;
             this.btnQLBienBanThanhLy.Text = "QL Biên Bản Thanh Lý";
             this.btnQLBienBanThanhLy.UseVisualStyleBackColor = true;
@@ -88,31 +92,36 @@
             // 
             this.btnQLphieuThongKe.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLphieuThongKe.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLphieuThongKe.Location = new System.Drawing.Point(388, 366);
+            this.btnQLphieuThongKe.Location = new System.Drawing.Point(291, 297);
+            this.btnQLphieuThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLphieuThongKe.Name = "btnQLphieuThongKe";
-            this.btnQLphieuThongKe.Size = new System.Drawing.Size(233, 96);
+            this.btnQLphieuThongKe.Size = new System.Drawing.Size(175, 78);
             this.btnQLphieuThongKe.TabIndex = 4;
             this.btnQLphieuThongKe.Text = "QL Phiếu Thống Kê";
             this.btnQLphieuThongKe.UseVisualStyleBackColor = true;
+            this.btnQLphieuThongKe.Click += new System.EventHandler(this.btnQLphieuThongKe_Click);
             // 
             // btnQLHoaDonNhap
             // 
             this.btnQLHoaDonNhap.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLHoaDonNhap.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLHoaDonNhap.Location = new System.Drawing.Point(74, 366);
+            this.btnQLHoaDonNhap.Location = new System.Drawing.Point(56, 297);
+            this.btnQLHoaDonNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLHoaDonNhap.Name = "btnQLHoaDonNhap";
-            this.btnQLHoaDonNhap.Size = new System.Drawing.Size(233, 96);
+            this.btnQLHoaDonNhap.Size = new System.Drawing.Size(175, 78);
             this.btnQLHoaDonNhap.TabIndex = 5;
             this.btnQLHoaDonNhap.Text = "QL Hóa Đơn Nhập";
             this.btnQLHoaDonNhap.UseVisualStyleBackColor = true;
+            this.btnQLHoaDonNhap.Click += new System.EventHandler(this.btnQLHoaDonNhap_Click);
             // 
             // btnQLNguyenLieu
             // 
             this.btnQLNguyenLieu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNguyenLieu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLNguyenLieu.Location = new System.Drawing.Point(1017, 143);
+            this.btnQLNguyenLieu.Location = new System.Drawing.Point(763, 116);
+            this.btnQLNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLNguyenLieu.Name = "btnQLNguyenLieu";
-            this.btnQLNguyenLieu.Size = new System.Drawing.Size(233, 106);
+            this.btnQLNguyenLieu.Size = new System.Drawing.Size(175, 86);
             this.btnQLNguyenLieu.TabIndex = 6;
             this.btnQLNguyenLieu.Text = "QL Nguyên Liệu";
             this.btnQLNguyenLieu.UseVisualStyleBackColor = true;
@@ -122,9 +131,10 @@
             // 
             this.btnQLPhieuDatNL.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLPhieuDatNL.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLPhieuDatNL.Location = new System.Drawing.Point(705, 143);
+            this.btnQLPhieuDatNL.Location = new System.Drawing.Point(529, 116);
+            this.btnQLPhieuDatNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLPhieuDatNL.Name = "btnQLPhieuDatNL";
-            this.btnQLPhieuDatNL.Size = new System.Drawing.Size(233, 106);
+            this.btnQLPhieuDatNL.Size = new System.Drawing.Size(175, 86);
             this.btnQLPhieuDatNL.TabIndex = 7;
             this.btnQLPhieuDatNL.Text = "QL Phiếu Đặt Nguyên Liệu";
             this.btnQLPhieuDatNL.UseVisualStyleBackColor = true;
@@ -134,19 +144,20 @@
             // 
             this.btnQLNCC.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNCC.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnQLNCC.Location = new System.Drawing.Point(388, 143);
+            this.btnQLNCC.Location = new System.Drawing.Point(291, 116);
+            this.btnQLNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQLNCC.Name = "btnQLNCC";
-            this.btnQLNCC.Size = new System.Drawing.Size(233, 106);
+            this.btnQLNCC.Size = new System.Drawing.Size(175, 86);
             this.btnQLNCC.TabIndex = 8;
             this.btnQLNCC.Text = "QL Nhà Cung Cấp";
             this.btnQLNCC.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(1318, 607);
+            this.ClientSize = new System.Drawing.Size(988, 493);
             this.Controls.Add(this.btnQLNCC);
             this.Controls.Add(this.btnQLPhieuDatNL);
             this.Controls.Add(this.btnQLNguyenLieu);
@@ -156,6 +167,7 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnQLNhanVien);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formMain";

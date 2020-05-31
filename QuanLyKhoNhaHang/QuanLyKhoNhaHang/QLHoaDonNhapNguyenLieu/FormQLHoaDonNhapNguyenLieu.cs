@@ -7,37 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyKhoNhaHang.QLNguyenLieu;
 using QuanLyKhoNhaHang.model;
 
-namespace QuanLyKhoNhaHang.QLNguyenLieu
+namespace QuanLyKhoNhaHang.QLHoaDonNhapNguyenLieu
 {
-    public partial class FormQLNguyenLieu : Form
+    public partial class FormQLHoaDonNhapNguyenLieu : Form
     {
         MyDBcontext db = new MyDBcontext();
-        public FormQLNguyenLieu()
+        public FormQLHoaDonNhapNguyenLieu()
         {
             InitializeComponent();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            FormThemNguyenLieu f = new FormThemNguyenLieu();
+            FormThemHoaDon f = new FormThemHoaDon();
             f.Show();
             this.Hide();
-
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            FormSuaNguyenLieu f = new FormSuaNguyenLieu();
+            FormSuaHoaDon f = new FormSuaHoaDon();
             f.Show();
             this.Hide();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            FormXoaNguyenLieu f = new FormXoaNguyenLieu();
+            FormXoaHoaDon f = new FormXoaHoaDon();
             f.Show();
             this.Hide();
         }
@@ -47,7 +45,6 @@ namespace QuanLyKhoNhaHang.QLNguyenLieu
             FormMain f = new FormMain();
             f.Show();
             this.Hide();
-
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -55,12 +52,23 @@ namespace QuanLyKhoNhaHang.QLNguyenLieu
             Application.Exit();
         }
 
-        private void FormQLNguyenLieu_Load(object sender, EventArgs e)
+        private void FormQLHoaDonNhapNguyenLieu_Load(object sender, EventArgs e)
         {
-            var dl = db.NguyenLieux.Where(x => x.MaNL != null);
-            DataTable dt = new DataTable();
-          //  dl.Fill(dt);
-            dataGridViewdsnl.DataSource = dt;
+            List<HoaDonNhapNL> DSHoaDon = db.HoaDonNhapNLs.ToList();
+            foreach (HoaDonNhapNL hd in DSHoaDon)
+            {
+                ListViewItem list = new ListViewItem(hd.MaHDN.ToString());
+                list.SubItems.Add(hd.MaPDNL.ToString());
+                list.SubItems.Add(hd.NgayLap.ToString());
+                list.SubItems.Add(hd.MaHDN.ToString());
+
+                listHoaDon.Items.Add(list);
+            }
+        }
+
+        private void listHoaDon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
