@@ -56,19 +56,20 @@
             this.btnQLNhanVien.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNhanVien.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLNhanVien.Location = new System.Drawing.Point(56, 116);
-            this.btnQLNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLNhanVien.Name = "btnQLNhanVien";
             this.btnQLNhanVien.Size = new System.Drawing.Size(175, 86);
             this.btnQLNhanVien.TabIndex = 1;
             this.btnQLNhanVien.Text = "QL Nhân Viên";
             this.btnQLNhanVien.UseVisualStyleBackColor = true;
+            this.btnQLNhanVien.Click += new System.EventHandler(this.btnQLNhanVien_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnThoat.Location = new System.Drawing.Point(763, 297);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(175, 78);
             this.btnThoat.TabIndex = 2;
@@ -81,7 +82,7 @@
             this.btnQLBienBanThanhLy.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLBienBanThanhLy.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLBienBanThanhLy.Location = new System.Drawing.Point(529, 297);
-            this.btnQLBienBanThanhLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLBienBanThanhLy.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLBienBanThanhLy.Name = "btnQLBienBanThanhLy";
             this.btnQLBienBanThanhLy.Size = new System.Drawing.Size(175, 78);
             this.btnQLBienBanThanhLy.TabIndex = 3;
@@ -93,7 +94,7 @@
             this.btnQLphieuThongKe.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLphieuThongKe.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLphieuThongKe.Location = new System.Drawing.Point(291, 297);
-            this.btnQLphieuThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLphieuThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLphieuThongKe.Name = "btnQLphieuThongKe";
             this.btnQLphieuThongKe.Size = new System.Drawing.Size(175, 78);
             this.btnQLphieuThongKe.TabIndex = 4;
@@ -106,7 +107,7 @@
             this.btnQLHoaDonNhap.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLHoaDonNhap.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLHoaDonNhap.Location = new System.Drawing.Point(56, 297);
-            this.btnQLHoaDonNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLHoaDonNhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLHoaDonNhap.Name = "btnQLHoaDonNhap";
             this.btnQLHoaDonNhap.Size = new System.Drawing.Size(175, 78);
             this.btnQLHoaDonNhap.TabIndex = 5;
@@ -119,7 +120,7 @@
             this.btnQLNguyenLieu.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNguyenLieu.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLNguyenLieu.Location = new System.Drawing.Point(763, 116);
-            this.btnQLNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLNguyenLieu.Name = "btnQLNguyenLieu";
             this.btnQLNguyenLieu.Size = new System.Drawing.Size(175, 86);
             this.btnQLNguyenLieu.TabIndex = 6;
@@ -132,7 +133,7 @@
             this.btnQLPhieuDatNL.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLPhieuDatNL.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLPhieuDatNL.Location = new System.Drawing.Point(529, 116);
-            this.btnQLPhieuDatNL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLPhieuDatNL.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLPhieuDatNL.Name = "btnQLPhieuDatNL";
             this.btnQLPhieuDatNL.Size = new System.Drawing.Size(175, 86);
             this.btnQLPhieuDatNL.TabIndex = 7;
@@ -145,12 +146,13 @@
             this.btnQLNCC.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNCC.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnQLNCC.Location = new System.Drawing.Point(291, 116);
-            this.btnQLNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLNCC.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLNCC.Name = "btnQLNCC";
             this.btnQLNCC.Size = new System.Drawing.Size(175, 86);
             this.btnQLNCC.TabIndex = 8;
             this.btnQLNCC.Text = "QL Nhà Cung Cấp";
             this.btnQLNCC.UseVisualStyleBackColor = true;
+            this.btnQLNCC.Click += new System.EventHandler(this.btnQLNCC_Click);
             // 
             // FormMain
             // 
@@ -167,7 +169,7 @@
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnQLNhanVien);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formMain";

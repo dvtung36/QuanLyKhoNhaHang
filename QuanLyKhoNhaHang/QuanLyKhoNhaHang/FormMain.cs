@@ -12,6 +12,8 @@ using QuanLyKhoNhaHang.QLHoaDonNhapNguyenLieu;
 using QuanLyKhoNhaHang.QLNguyenLieu;
 using QuanLyKhoNhaHang.QLPhieuDatNguyenLieu;
 using QuanLyKhoNhaHang.QLPhieuThongKe;
+using QuanLyKhoNhaHang.QLNhaCungCap;
+using QuanLyKhoNhaHang.QLNhanVien;
 
 namespace QuanLyKhoNhaHang
 {
@@ -51,6 +53,20 @@ namespace QuanLyKhoNhaHang
         private void btnQLphieuThongKe_Click(object sender, EventArgs e)
         {
             FormQLPhieuThongKe f = new FormQLPhieuThongKe();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnQLNCC_Click(object sender, EventArgs e)
+        {
+            FormQLNCC f = new FormQLNCC();
+            f.Show();
+            this.Hide();
+        }
+
+        private void btnQLNhanVien_Click(object sender, EventArgs e)
+        {
+            FormQLNhanVien f = new FormQLNhanVien();
             f.Show();
             this.Hide();
         }

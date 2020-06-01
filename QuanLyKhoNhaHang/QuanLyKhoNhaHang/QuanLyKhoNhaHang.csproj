@@ -126,6 +126,30 @@
     <Compile Include="QLNguyenLieu\FormXoaNguyenLieu.Designer.cs">
       <DependentUpon>FormXoaNguyenLieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLNhaCungCap\FormQLNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNhaCungCap\FormQLNCC.Designer.cs">
+      <DependentUpon>FormQLNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNhaCungCap\FormTimKiemNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNhaCungCap\FormTimKiemNCC.Designer.cs">
+      <DependentUpon>FormTimKiemNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNhanVien\FormQLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNhanVien\FormQLNhanVien.Designer.cs">
+      <DependentUpon>FormQLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNhanVien\FormTimKiemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNhanVien\FormTimKiemNV.Designer.cs">
+      <DependentUpon>FormTimKiemNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLPhieuDatNguyenLieu\FormQLPhieuDatNL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +216,18 @@
     <EmbeddedResource Include="QLNguyenLieu\FormXoaNguyenLieu.resx">
       <DependentUpon>FormXoaNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLNhaCungCap\FormQLNCC.resx">
+      <DependentUpon>FormQLNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNhaCungCap\FormTimKiemNCC.resx">
+      <DependentUpon>FormTimKiemNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNhanVien\FormQLNhanVien.resx">
+      <DependentUpon>FormQLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNhanVien\FormTimKiemNV.resx">
+      <DependentUpon>FormTimKiemNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QLPhieuDatNguyenLieu\FormQLPhieuDatNL.resx">
       <DependentUpon>FormQLPhieuDatNL.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,8 +259,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="QLBienBanThanhLy\" />
-    <Folder Include="QLNhaCungCap\" />
-    <Folder Include="QLNhanVien\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
