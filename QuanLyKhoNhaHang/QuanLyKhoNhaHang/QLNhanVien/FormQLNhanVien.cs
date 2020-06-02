@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyKhoNhaHang.model;
+using System.Data.SqlClient;
 
 namespace QuanLyKhoNhaHang.QLNhanVien
 {
@@ -21,7 +22,12 @@ namespace QuanLyKhoNhaHang.QLNhanVien
 
         private void FormQLNhanVien_Load(object sender, EventArgs e)
         {
-            List<NhanVien> DsNV = db.NhanViens.ToList();
+            show();
+        }
+        private void show()
+        {
+            List<NhanVien> DsNV = db.NhanViens.SqlQuery("laydsnv").ToList();
+
             foreach (NhanVien nv in DsNV)
             {
                 ListViewItem item = new ListViewItem(nv.MaNV.ToString());
@@ -48,21 +54,29 @@ namespace QuanLyKhoNhaHang.QLNhanVien
 
         private void btThem_Click(object sender, EventArgs e)
         {
+            //NhanVien nv = new NhanVien()
+            //{
+            //    MaNV = int.Parse(txtMaNV.Text),
+            //    HoTen = txtHoTen.Text,
+            //    NgaySinh = dateTimePicker1.Value,
+            //    DiaChi = txtDiaChi.Text,
+            //    SDT = txtSDT.Text,
+            //};
+            //   db.NhanViens.SqlQuery("Them", int.Parse(txtMaNV.Text), txtHoTen.Text, dateTimePicker1.Value, txtDiaChi.Text, txtSDT.Text);
             try
             {
-                NhanVien nv = new NhanVien()
+                SqlParameter[] idparam =
                 {
-                    MaNV = int.Parse(txtMaNV.Text),
-                    HoTen = txtHoTen.Text,
-                    NgaySinh = dateTimePicker1.Value,
-                    DiaChi = txtDiaChi.Text,
-                    SDT = txtSDT.Text,
+                    new SqlParameter { ParameterName = "MaNV", Value = int.Parse(txtMaNV.Text) },
+                    new SqlParameter { ParameterName = "HoTen", Value = txtHoTen.Text},
+                    new SqlParameter { ParameterName = "NgaySinh ", Value = dateTimePicker1.Value },
+                    new SqlParameter { ParameterName = "DiaChi", Value = txtDiaChi.Text},
+                    new SqlParameter { ParameterName = "SDT", Value = txtSDT.Text}
                 };
-                db.NhanViens.Add(nv);
+                db.Database.ExecuteSqlCommand("Them @manv,@hoten, @ngaysinh, @diachi,@sdt ", idparam);
                 db.SaveChanges();
                 MessageBox.Show("them thanh cong");
-                FormQLNhanVien_Load(sender, e);
-
+                show();
             }
             catch (Exception ex)
             {
@@ -94,17 +108,19 @@ namespace QuanLyKhoNhaHang.QLNhanVien
                 nv.NgaySinh = dateTimePicker1.Value;
                 nv.DiaChi = txtDiaChi.Text;
                 nv.SDT = txtSDT.Text;
-
+                SqlParameter[] idparam =
+                {
+                    new SqlParameter { ParameterName = "MaNV", Value = nv.MaNV },
+                    new SqlParameter { ParameterName = "HoTen", Value = nv.HoTen },
+                    new SqlParameter { ParameterName = "NgaySinh ", Value = nv.NgaySinh },
+                    new SqlParameter { ParameterName = "DiaChi", Value = nv.DiaChi},
+                    new SqlParameter { ParameterName = "SDT", Value =  nv.SDT}
+                };
+                db.Database.ExecuteSqlCommand("suanv @manv,@hoten, @ngaysinh, @diachi,@sdt ", idparam);
                 db.SaveChanges();
                 MessageBox.Show("Sua thanh cong");
-                FormQLNhanVien_Load(sender, e);
-                ListViewItem item = new ListViewItem(nv.MaNV.ToString());
-                item.SubItems.Add(nv.HoTen.ToString());
-                item.SubItems.Add(nv.NgaySinh.ToString());
-                item.SubItems.Add(nv.DiaChi.ToString());
-                item.SubItems.Add(nv.SDT.ToString());
+                show();
 
-                listDsNV.Items.Add(item);
             }
             catch (Exception ex)
             {
@@ -117,10 +133,11 @@ namespace QuanLyKhoNhaHang.QLNhanVien
             try
             {
                 NhanVien nv = db.NhanViens.Find(int.Parse(txtMaNV.Text));
-                db.NhanViens.Remove(nv);
+                SqlParameter idparam = new SqlParameter { ParameterName = "MaNV", Value = nv.MaNV };
+                db.Database.ExecuteSqlCommand("xoanv @manv ", idparam);
                 db.SaveChanges();
                 MessageBox.Show("Xóa Thành Công");
-                FormQLNhanVien_Load(sender, e);
+                show();
             }
             catch (Exception ex)
             { MessageBox.Show("" + ex.Message); }

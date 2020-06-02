@@ -74,5 +74,18 @@ namespace QuanLyKhoNhaHang.QLPhieuDatNguyenLieu
                 MessageBox.Show("Có lỗi rồi!!!" + a.Message);
             }
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                ListViewItem itemSelected = listView1.SelectedItems[0];
+                txtMaPhieuDatNLCanSua.Text = itemSelected.SubItems[0].Text;
+                txtNgayLap.Text = itemSelected.SubItems[1].Text;
+                txtMaNCC.Text = itemSelected.SubItems[2].Text;
+                txtMaNV.Text = itemSelected.SubItems[3].Text;
+           
+            }
+        }
     }
 }

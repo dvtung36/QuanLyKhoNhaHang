@@ -108,24 +108,6 @@
     <Compile Include="QLNguyenLieu\FormQLNguyenLieu.Designer.cs">
       <DependentUpon>FormQLNguyenLieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLNguyenLieu\FormSuaNguyenLieu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLNguyenLieu\FormSuaNguyenLieu.Designer.cs">
-      <DependentUpon>FormSuaNguyenLieu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLNguyenLieu\FormThemNguyenLieu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLNguyenLieu\FormThemNguyenLieu.Designer.cs">
-      <DependentUpon>FormThemNguyenLieu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLNguyenLieu\FormXoaNguyenLieu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLNguyenLieu\FormXoaNguyenLieu.Designer.cs">
-      <DependentUpon>FormXoaNguyenLieu.cs</DependentUpon>
-    </Compile>
     <Compile Include="QLNhaCungCap\FormQLNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,15 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLNguyenLieu\FormQLNguyenLieu.resx">
       <DependentUpon>FormQLNguyenLieu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLNguyenLieu\FormSuaNguyenLieu.resx">
-      <DependentUpon>FormSuaNguyenLieu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLNguyenLieu\FormThemNguyenLieu.resx">
-      <DependentUpon>FormThemNguyenLieu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLNguyenLieu\FormXoaNguyenLieu.resx">
-      <DependentUpon>FormXoaNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLNhaCungCap\FormQLNCC.resx">
       <DependentUpon>FormQLNCC.cs</DependentUpon>
